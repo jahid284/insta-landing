@@ -1,0 +1,222 @@
+body {
+  overflow-x: hidden;
+  font-family: Open Sans;
+  color: rgba(104,104,104,0.91);
+}
+h1 {
+  font-size: 64px;
+}
+.section-heading {
+  position: relative;
+}
+.section-heading::after {
+  position: absolute;
+  content: '';
+  background: #686868;
+  bottom: -8px;
+  left: 50%;
+  width: 40px;
+  height: 5px;
+  margin-left: -20px;
+}
+.swiper-slide img {
+    height: 350px;
+    width: 100%;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #000;
+}
+
+/*hero-banner*/
+.hero-banner {
+  background: url(../../assets/hero-banner.jpg) no-repeat center center;
+  padding: 100px 0 100px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(86, 84, 84, 0.51);
+}
+
+.hero-banner .section-heading h1 {
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media(min-width: 800px) {
+  .hero-banner .section-heading {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+.hero-banner p {
+  margin-top: 57px;
+  color: #fff;
+  opacity: 1;
+  background: #0000007a;
+  padding: 5px;
+  max-width: 400px;
+  margin: 25px auto;
+}
+
+/*promo-template*/
+.promo-template {
+  padding-top: 80px;
+}
+.promo-template .promo-header #headline2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.promo-template .promo-header p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+}
+.promo-template .promo-content-description {
+  overflow: hidden;
+  width: 100%;
+}
+.promo-template .promo-content-description .promo-image,
+.promo-template .promo-content-description .promo-meta {
+  float: left;
+}
+.promo-template .promo-content-description .promo-meta h3 {
+  font-size: 18px;
+}
+
+@media(min-width: 765px) {
+  .promo-template .promo-content-description .promo-image {width: 50px;}
+  .promo-template .promo-content-description .promo-meta {width: calc(100% - 70px); margin-left: 20px;}
+  .promo-template .promo-content-description .promo-image img {
+    position: relative;
+    top: 70px;
+  }
+}
+
+
+/*offer-template*/
+.offer-template {
+  padding: 30px 0 30px;
+}
+.offer-template .offer-title {
+  margin-bottom: 20px;
+}
+
+
+.offer-template .offer-content .offer-thumb {
+    max-width: 135px;
+    margin: auto;
+}
+
+.bottom-price .room-entry {
+    display: block;
+    border-bottom: 1px solid #EBEBEB;
+}
+.bottom-price .price {
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 15px;
+    color: #111;
+}
+
+
+
+
+/*hotel-area*/
+.hotel-area {
+  padding-top: 80px;
+}
+
+
+
+.card 
+{
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+  
+  /*transition effects */
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card.flipped 
+{
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+.card.flipped:
+{ 
+}
+
+.card .front,
+.card .back {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 4em;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.card .back {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.card .back {
+  background: #03446A;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+
+
+.flip-section {
+  margin-bottom: 50px;
+}
+
+.type-section {
+  padding: 80px 0 80px;
+}
+
+.contact-form-section {
+  padding: 50px 0 50px;
+}
+
+.contact-form-section .form-control {
+  margin-bottom: 15px;
+}
+
+
